@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Contact</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.production.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <!--NAVIGATION HEADER WITH LOGO-->
+      <img src="img/nameblockSMOL.png" alt="Logo" class="page-header_item" />
+      <nav class="main-navigation page-header_item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list_item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list_item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list_item navigation-list_item--active"
+              >Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Contact</h1>
+
+    <div>
+      <ul>
+        <form action="" method="post" id="contact-form">
+          <li>
+            <label class="standard-label" for="contact-email">E-mail: </label>
+            <input type="email" id="contact-email" required />
+          </li>
+          <li>
+            <!--USE <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> AS A REGULAR EXPRESSION TO RESTRICT PHONE NUMBERS TO ###-###-#### FORMAT  -->
+            <label class="standard-label" for="contact-telephone"
+              >Telephone (XXX-XXX-XXXX):
+            </label>
+            <input
+              type="tel"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              id="contact-telephone"
+              required
+            />
+          </li>
+          <li>
+            <label class="standard-label" for="contact-message"
+              >Message:
+            </label>
+            <textarea maxlength="240" id="contact-message" required></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Send message" />
+          </li>
+        </form>
+      </ul>
+    </div>
+
+    <div>
+      Cody Ragsdale<br />
+      844 Horton Rd<br />
+      Unit 64<br />
+      Durham, NC<br />
+      <br />
+      <a href="mailto:codyjguyragsdale (at) gmail (dot) com">Contact Me!</a
+      ><br />
+      <a href="tel:8035526357">Cell</a><br />
+      <a href="mailto:codyjguyragsdale (at) gmail (dot) com">Email</a><br />
+      <a href="skype:Idonthaveaskype">Skype</a>
+    </div>
+
+    <!--FOOTER WITH SOCIAL MEDIA LINKS-->
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <img src="img/githubicon.svg" alt="Github" />
+        <img src="img/linkedinicon.svg" alt="LinkedIn" />
+        <img src="img/twittericon.svg" alt="Twitter" />
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
