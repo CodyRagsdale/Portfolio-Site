@@ -1,260 +1,261 @@
 :root {
-        --main-background: rgb(224, 224, 224);
-        --primary-color: #860202;
-        --secondary-color: #fcfcfc;
-        --dark-grey: #2b2b2b; 
-        --black: #000000;
-        --white: #fff;
-        --sunstart: #edc655;
-        --sunmiddle: #fcffad;
-        --sunend: #f76414;
-        --gridbackground: rgb(141, 141, 141);
-        --activelink: #00028a;
-        --navhover: #c6c6c6;
+  --main-background: rgb(224, 224, 224);
+  --primary-color: #860202;
+  --secondary-color: #fcfcfc;
+  --dark-grey: #2b2b2b;
+  --black: #000000;
+  --white: #fff;
+  --sunstart: #edc655;
+  --sunmiddle: #fcffad;
+  --sunend: #f76414;
+  --gridbackground: rgb(141, 141, 141);
+  --activelink: #00028a;
+  --navhover: #c6c6c6;
 }
 
 body {
-        background-color: var(--main-background);
+  background-color: var(--main-background);
 }
 body {
-        font-family: 'Cormorant+Garamond', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.6;
-        box-sizing: border-box;
-        border: 10px;
-        padding: 10px;
+  font-family: "Cormorant+Garamond", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  box-sizing: border-box;
+  border: 10px;
+  padding: 10px;
 }
 
 .profile {
-        min-width: 360px;
-        max-width: 700px;
-        margin: 0 auto;
+  min-width: 360px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .profile_portrait {
-        float: left;
-        width:250px;
-        margin-right: 40px;
-        border-radius: 50%;
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
 }
 
 h1 {
-        font-size: 30px;
-        font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 h2 {
-        font-size: 24px;
-        font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 h3 {
-        font-size: 18px;
-        font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 a {
-        color: var(--primary-color);
+  color: var(--primary-color);
 }
 
-a:hover, a:focus {
-        /*no underlining when hovering over a link*/
-        text-decoration:none
+a:hover,
+a:focus {
+  /*no underlining when hovering over a link*/
+  text-decoration: none;
 }
 
 a:active {
-        /*selected link*/
-        color: var(--activelink);
+  /*selected link*/
+  color: var(--activelink);
 }
 
 button,
 .button {
-        /*overwrites browser defaults and resets the border */
-        border: none;
-        display: inline-block;
-        /*takes the font from the outer container*/
-        font-family: inherit;
-        /*styles the background color, font color, and text decoration (underline, etc.) of the button*/
-        background-color: var(--primary-color);
-        color: var(--white);
-        text-decoration: none;
-        /*adds spacing to the button (this will be discussed more in-depth later) */
-        padding: 10px;
-        border-radius: 3px;
-        /*gives the button a bottom border with a width of 2px, a type of solid and a color */
-        border-bottom: 2px solid var(--black);
-        transition: 0.2s opacity, 0.5s background-color;
+  /*overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /*takes the font from the outer container*/
+  font-family: inherit;
+  /*styles the background color, font color, and text decoration (underline, etc.) of the button*/
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /*gives the button a bottom border with a width of 2px, a type of solid and a color */
+  border-bottom: 2px solid var(--black);
+  transition: 0.2s opacity, 0.5s background-color;
 }
 
-button:hover, 
+button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-        /* lets the mouse appear as a hand when hovering over the button */
-        cursor: pointer;
-        /*reduces the opacity of the button to 80% */
-        opacity: 0.8;
-        background-color: var(--black);
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /*reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  background-color: var(--black);
 }
 
 .button_secondary {
-        background-color:  var(--secondary-color);
-        color: var(--dark-grey);
+  background-color: var(--secondary-color);
+  color: var(--dark-grey);
 }
 
 .page-footer {
-        clear:both;
-        display: flex;
-        flex-direction: column;
-        text-align: center
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .page-header {
-        display: flex;
-        width: 98%;
-        padding: 20px;
+  display: flex;
+  width: 98%;
+  padding: 20px;
 }
 
 .page-header_item {
-        flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header_item:last-child {
-        flex-grow: 1;
-        text-align: right;
+  flex-grow: 1;
+  text-align: right;
 }
 
 .navigation-list {
-        list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation-list li {
-        display: inline-block;
-        margin-left: 15px;
-        transition: background .25s;
+  display: inline-block;
+  margin-left: 15px;
+  transition: background 0.25s;
 }
 
 .navigation-list li:hover {
-        background: var(--navhover);
-        font-weight: bold;
+  background: var(--navhover);
+  font-weight: bold;
 }
 
 .navigation-list_item--active {
-        text-decoration: none;
+  text-decoration: none;
 }
 
 /*FALLBACK FOR GRID*/
 .grid_item {
-        display: inline-block;
-        width: 33%;
+  display: inline-block;
+  width: 33%;
 }
 /*END FALLBACK*/
 
-@supports (display:grid) {
-.grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px
- }
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 .grid_item {
-        background-color: var(--gridbackground);
-        width: auto;
-        min-height: auto;
-        margin: 0;
-        padding: 5px;
+  background-color: var(--gridbackground);
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 5px;
 }
 
 .grid_item:last-child {
-        grid-column: 3/3;
-        grid-row: 1/3;
+  grid-column: 3/3;
+  grid-row: 1/3;
 }
 
 @media all and (max-width: 500px) {
- .grid {
-        grid-template-columns: 1fr;
- }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
- .grid {
-        grid-template-columns: 1fr 1fr;
- }
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media all and (max-width: 750px) {
- .grid {
-        grid-gap:10px;
- }
- .grid_item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
- }
- h1 {
-        font-size: 22px;
- }
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid_item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
 }
 
 .abouttext {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
-        text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
 }
 
 .aboutlist {
-        padding: 0;
-        list-style-type: none;
-        text-align: center;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
 }
 
 #about-picture {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
 @keyframes color-change {
-        0% {
-                fill: var(--sunstart);
-        }
-        50% {
-                fill: var(--sunmiddle);
-        }
-        100% {
-                fill: var(--sunend);
-        }
+  0% {
+    fill: var(--sunstart);
+  }
+  50% {
+    fill: var(--sunmiddle);
+  }
+  100% {
+    fill: var(--sunend);
+  }
 }
 
 @keyframes cloud-move {
-        from {
-                transform: translate(0, 50px);
-        }
-        to {
-                transform: translate(200px, 50px);
-        }
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-        from {
-                transform: translate(446px, 48px);
-        }
-        to {
-                transform:translate(100px, 48px);
-        }
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .sun {
-        animation-duration: 4s;
-        animation-name: color-change;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 .cloud-front {
-        animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
-        animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
