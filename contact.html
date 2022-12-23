@@ -6,7 +6,7 @@
       content="width=device-width, initial-scale=1"
     />
     <title>Contact Cody Ragsdale</title>
-    <link rel="shortcut icon" href="favicon-32x32.png" />
+    <link rel="shortcut icon" href="namelogo32x32.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -20,13 +20,15 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.production.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <header class="page-header">
       <!--NAVIGATION HEADER WITH LOGO-->
-      <img src="img/nameblockSMOL.png" alt="Logo" class="page-header_item" />
+            <a href="index.html"
+        ><img src="img/namelogoSMOL.png" alt="Logo" class="page-header_item"
+      /></a>
       <nav class="main-navigation page-header_item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -55,61 +57,58 @@
         </ul>
       </nav>
     </header>
-
-    <h1>Contact</h1>
-
-    <div>
-      <ul>
-        <form action="" method="post" id="contact-form">
-          <li>
-            <label class="standard-label" for="contact-email">E-mail: </label>
-            <input type="email" id="contact-email" required />
-          </li>
-          <li>
-            <!--USE <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> AS A REGULAR EXPRESSION TO RESTRICT PHONE NUMBERS TO ###-###-#### FORMAT  -->
-            <label class="standard-label" for="contact-telephone"
-              >Telephone (XXX-XXX-XXXX):
-            </label>
-            <input
-              type="tel"
-              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-              id="contact-telephone"
-              required
-            />
-          </li>
-          <li>
-            <label class="standard-label" for="contact-message"
-              >Message:
-            </label>
-            <textarea maxlength="240" id="contact-message" required></textarea>
-          </li>
-          <li>
-            <input type="submit" value="Send message" />
-          </li>
-        </form>
-      </ul>
+    <div class="contact-text">
+    <h1>Contact Me</h1>
+      <a href="tel:8035526357">803-552-6357</a><br />
+      <a href="mailto:codyjguyragsdale@gmail.com">codyjguyragsdale@gmail.com</a><br />
     </div>
 
-    <div>
-      Cody Ragsdale<br />
-      844 Horton Rd<br />
-      Unit 64<br />
-      Durham, NC<br />
-      <br />
-      <a href="mailto:codyjguyragsdale (at) gmail (dot) com">Contact Me!</a
-      ><br />
-      <a href="tel:8035526357">Cell</a><br />
-      <a href="mailto:codyjguyragsdale (at) gmail (dot) com">Email</a><br />
-      <a href="skype:Idonthaveaskype">Skype</a>
+    <div class="contact-container">
+      <h2>Send me a message</h2>
+      <form action="" method="post" id="contact-form">
+        <div>
+          <label class="standard-label" for="contact-email">E-mail: </label>
+          <input type="email" id="contact-email" required />
+        </div>
+        <br>
+        <!--USE <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> AS A REGULAR EXPRESSION TO RESTRICT PHONE NUMBERS TO ###-###-#### FORMAT  -->
+        <div>
+          <label class="standard-label" for="contact-telephone"
+            >Telephone (XXX-XXX-XXXX):
+          </label>
+          <input
+            type="tel"
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            id="contact-telephone"
+            required
+          />
+        </div>
+        <br>
+        <div>
+          <label class="standard-label" for="contact-message">Message: </label>
+          <textarea maxlength="240" id="contact-message" required></textarea>
+        </div>
+        <br>
+        <div>
+          <input id="submit-button" type="submit" value="Submit" />
+        </div>
+        </div>
+      </form>
     </div>
+
+
 
     <!--FOOTER WITH SOCIAL MEDIA LINKS-->
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <img src="img/githubicon.svg" alt="Github" />
-        <img src="img/linkedinicon.svg" alt="LinkedIn" />
-        <img src="img/twittericon.svg" alt="Twitter" />
+        <a href="https://github.com/CodyRagsdale" target="_blank"
+          ><img src="img/githubicon.svg" alt="Github"
+        /></a>
+        <a href="https://www.linkedin.com/in/cody-ragsdale-bb045625b/" target="_blank"><img src="img/linkedinicon.svg" alt="LinkedIn" /></a>
+        <a href="https://twitter.com/CodyRags" target="_blank"
+          ><img src="img/twittericon.svg" alt="Twitter"
+        /></a>
       </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
